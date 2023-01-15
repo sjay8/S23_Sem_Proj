@@ -14,17 +14,17 @@ I used 3 epochs since BERT best works on 2-4 epochs, I found 3 to perform better
 
 4. Model Evaluation/Results: Present the metrics you chose and your model evaluation results.
 
-I also calculated the accuracy or validation loss which came out to 94%. I used the Matthews Correlation Coefficient since it is best for binary classification evaluations. The value was calculated automatically and manually using the confusion matrix values. The final value was 0.976 which means the observed and predicted values nearly always matched up or exhibited very strong positive correlation. 
+I also calculated the accuracy which came out to 94%. I used the Matthews Correlation Coefficient since this metric is best for binary classification evaluations. The value was calculated automatically and manually via confusion matrix values. The final value was 0.976 which means the observed and predicted values nearly always matched up or very strong positive correlation was exhibited. 
 
 5. Discussion: 
 How well does your dataset, model architecture, training procedures, and chosen metrics fit the task at hand? 
 
-Given my high MCC, I think my dataset and training procedures and metrics fit the task at hand. Furthermore, BERT is a state-of-the-art model that has extremely high accuracy and is able to interpret complex datasets. 
+Given my high MCC, I think my dataset and training procedures and metrics fit the task at hand. Furthermore, BERT is a state-of-the-art model that has extremely high accuracy and is able to interpret complex linguistic datasets. 
 
 6. Can your efforts be extended to wider implications, or contribute to social good? Are there any limitations in your methods that should be considered before doing so?
 
-This model could be used in social media to better understand its users or refine fake news identification (prevent the unnecessary flagging headlines as fake news).
+This model could be used in social media to better understand its users or refine fake news identification (prevent the unnecessary flagging headlines as fake news when they are actually sacrastic or satiricial). The limitation is the BERT pre-built dictionary needs to overlap with the dataset and a lanugage that BERT has been trained on only can be used.
 
 7. If you were to continue this project, what would be your next steps?
 
-I would  continue changing the other hyperparameters (LR, batchsize) gradient type, adding an additional layer after the final BERT layer,freezing the first few layers of the model (shown to improve processing time but maintain accuracy) or changing the test/train split 
+I would  continue changing the other hyperparameters (LR, batchsize), gradient type,freezing the first few layers of the model (shown to improve processing time but maintain accuracy) or changing the test/train split ratio
