@@ -1,6 +1,6 @@
 # Write Up
 
-1. In one or two sentences, present your project to us!_
+1. In one or two sentences, present your project to us!
 
 This project uses a BERT model to predict whether sarcasm exists in a newspaper article headline. 
 
